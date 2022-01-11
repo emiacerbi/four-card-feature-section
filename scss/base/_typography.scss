@@ -1,0 +1,36 @@
+body {
+    font-family: var(--ff);
+    line-height: 1.8;
+}
+
+.title {
+    font-weight: 200;
+    font-size: 1.5rem;
+    color: var(--very-dark-blue);
+    line-height: 1.4;
+
+    .accent {
+        font-weight: 600;
+        font-size: 1.5rem;
+        color: var(--very-dark-blue);
+        display: block;
+    }
+}
+
+.subtitle {
+    font-weight: 400;
+    font-size: 0.9375rem;
+    color: var(--grayish-blue);
+    text-align: center;
+}
+
+.tool__title {
+    font-size: 1.3rem;
+    color: var(--very-dark-blue);
+}
+
+.tool__text {
+    font-weight: 400;
+    color: var(--grayish-blue);
+    font-size: .8rem;
+}

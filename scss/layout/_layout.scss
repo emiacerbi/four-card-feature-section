@@ -1,0 +1,169 @@
+body {
+    padding: 4em 2em;
+}
+
+.title {
+  text-align: center;
+}
+
+.subtitle {
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 53ch;
+    
+}
+
+.tools {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 4em;
+
+    .tool {
+        max-width: 350px;
+        margin: 0 auto;
+        margin-bottom: 2em;
+        padding: 1.525em;
+        border-radius: .7rem;
+        position: relative;        
+        overflow: hidden;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        cursor: pointer;
+        transition: .2s ease-in-out;
+
+        .tool__line {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+          }
+
+          .cyan {
+            background-color: var(--cyan);
+          }
+
+          .red {
+            background-color: var(--red);
+          }
+
+          .orange {
+            background-color: var(--orange);
+          }
+
+          .blue {
+            background-color: var(--blue);
+          }
+
+        .tool__icon {
+            margin-left: auto;
+            margin-top: 2em;
+        }
+    }
+
+    .tool:hover {
+      transform: translateY(-2.5%);
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    }
+}
+
+
+@media (min-width: 600px) {
+  .tools {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 3em;
+    justify-items: center;
+
+    .tool {
+      margin: 0;
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+
+  .tools {
+    display: grid;
+    grid-gap: 2em;
+    justify-content: center;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: 
+      "... tb ..."  
+      "super tb calc"
+      "super karma calc"
+      "... karma ..."
+    ;
+
+    .super {
+      grid-area: super;
+    }
+
+    .tb {
+      grid-area: tb;
+
+    }
+
+    .karma {
+      grid-area: karma;
+
+    }
+
+    .calc {
+      grid-area: calc;
+
+    }
+  }
+//     body {
+//       padding-bottom: 3em;
+
+//       .subtitle {
+//         width: 55ch;
+//         margin: 0 auto;
+//         margin-top: 1em;
+//         text-align: center;
+//       }
+//     }
+    
+//     .tools {
+//       display: flex;
+//       justify-content: center;
+//       align-items: center;
+//       gap: 2em;
+
+//       // .one {
+//       //   order: 1;
+//       // }
+
+//       // .test {
+//       //   display: block;
+//       //   order: 2;
+//       // }
+
+//       .tool {
+//         width: 311px;
+//         height: 228px;
+//         margin: 0;
+//         margin-bottom: 2em;        
+//         padding: 1.7em;
+//         transition: .3s ease-in-out;
+
+//         .tool__title {
+//           margin-bottom: .5em;
+//           line-height: 1;
+//         }
+//       } 
+
+//       .last-tool {
+//         margin-bottom: 0;
+//       }
+
+//       // .four {
+//       //   order: 3;
+//       // }
+//     }
+  
+}
