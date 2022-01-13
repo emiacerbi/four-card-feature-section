@@ -18,7 +18,7 @@ Users should be able to:
 
 ### Links
 
-<!-- - Live Site URL: [Link](https://emiacerbi.github.io/four-card-feature-section/) -->
+Live Site URL: [Link](https://emiacerbi.github.io/four-card-feature-section/)
 
 ## My process
 
